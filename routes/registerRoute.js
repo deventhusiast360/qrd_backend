@@ -22,7 +22,7 @@ router.post("/register", validInfo, async (req, res) => {
       const {jwtToken,user} = await loginUser(phoneNumber, password);
 
       
-      
+      console.log("logged in");
       
 
       res.json({ jwtToken:jwtToken,user:user });
